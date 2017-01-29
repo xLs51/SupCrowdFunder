@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llEverything"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lvCategories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llProjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/RVProject1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1" >
+
+            <!-- Project 1 -->
+
+            <ImageView
+                android:id="@+id/ivProjectImg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/emptydesc"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvProjectDescription1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ivProjectImg1"
+                android:ems="10" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvProjectTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/tvProjectDescription1"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="14dp"
+                android:text="@string/projecttitle" />
+
+            <Button
+                android:id="@+id/btnAddContribution"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="32dp"
+                android:layout_toLeftOf="@+id/ivProjectImg1"
+                android:onClick="ShowOneProject"
+                android:text="Button" />
+
+        </RelativeLayout>
+
+        <!-- Project2 -->
+
+        <RelativeLayout
+            android:id="@+id/RVProject2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/ivProjectImg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/emptydesc"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvProjectDescription2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ivProjectImg2"
+                android:ems="10" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvProjectTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/tvProjectDescription2"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="14dp"
+                android:text="@string/projecttitle" />
+        </RelativeLayout>
+
+        <!-- Project3 -->
+
+        <RelativeLayout
+            android:id="@+id/RVProject3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvProjectDescription3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ivProjectImg3"
+                android:ems="10" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvProjectTitle3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/tvProjectDescription3"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="14dp"
+                android:text="@string/projecttitle" />
+
+            <ImageView
+                android:id="@+id/ivProjectImg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/emptydesc"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RVProject4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1" >
+
+            <!-- Project 4 -->
+
+            <ImageView
+                android:id="@+id/ivProjectImg4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/emptydesc"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvProjectDescription4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ivProjectImg4"
+                android:ems="10" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvProjectTitle4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/tvProjectDescription4"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="14dp"
+                android:text="@string/projecttitle" />
+        </RelativeLayout>
+
+        <!-- Project5 -->
+
+        <RelativeLayout
+            android:id="@+id/RVProject5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/ivProjectImg5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/emptydesc"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvProjectDescription5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ivProjectImg5"
+                android:ems="10" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvProjectTitle5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/tvProjectDescription5"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="14dp"
+                android:text="@string/projecttitle" />
+        </RelativeLayout>
+
+        <!-- Project6 -->
+
+        <RelativeLayout
+            android:id="@+id/RVProject6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvProjectDescription6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ivProjectImg6"
+                android:ems="10" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvProjectTitle6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/tvProjectDescription6"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="14dp"
+                android:text="@string/projecttitle" />
+
+            <ImageView
+                android:id="@+id/ivProjectImg6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/emptydesc"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

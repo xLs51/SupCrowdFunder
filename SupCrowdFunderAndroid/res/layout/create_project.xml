@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:paddingBottom="@dimen/activity_vertical_margin"
+   android:paddingLeft="@dimen/activity_horizontal_margin"
+   android:paddingRight="@dimen/activity_horizontal_margin"
+   android:paddingTop="@dimen/activity_vertical_margin"
+   tools:context=".MainActivity" >
+   
+    <TextView
+      android:id="@+id/textViewError"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+   <TextView
+      android:id="@+id/textView1lol"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:text="@string/create_project"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+   <TextView
+      android:id="@+id/tvNameProject"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/textView1lol"
+      android:layout_marginTop="20dp"
+      android:text="@string/nameProject"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <EditText
+      android:id="@+id/etNameProject"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/tvNameProject"
+      android:layout_marginLeft="32dp"
+      android:layout_toRightOf="@+id/tvNameProject"
+      android:ems="10" />
+
+   <TextView
+      android:id="@+id/tvDescriptionProject"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/tvNameProject"
+      android:layout_below="@+id/tvNameProject"
+      android:layout_marginTop="38dp"
+      android:text="@string/descriptionProject"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <EditText
+      android:id="@+id/etDescriptionProject"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/tvDescriptionProject"
+      android:layout_alignLeft="@+id/etNameProject"
+      android:ems="10" />
+   
+   <TextView
+      android:id="@+id/tvStartDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/tvDescriptionProject"
+      android:layout_below="@+id/tvDescriptionProject"
+      android:layout_marginTop="38dp"
+      android:text="@string/startDate"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <EditText
+      android:id="@+id/etStartDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/tvStartDate"
+      android:layout_alignLeft="@+id/etDescriptionProject"
+      android:ems="10"
+      android:inputType="date"  />
+   
+   <TextView
+      android:id="@+id/tvEndDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/tvStartDate"
+      android:layout_below="@+id/tvStartDate"
+      android:layout_marginTop="38dp"
+      android:text="@string/endDate"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <EditText
+      android:id="@+id/etEndDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/tvEndDate"
+      android:layout_alignLeft="@+id/etStartDate"
+      android:ems="10"
+      android:inputType="date" />
+ 
+   <TextView
+      android:id="@+id/tvGoal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/tvEndDate"
+      android:layout_below="@+id/tvEndDate"
+      android:layout_marginTop="38dp"
+      android:text="@string/goal"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <EditText
+      android:id="@+id/etGoal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/tvGoal"
+      android:layout_alignLeft="@+id/etEndDate"
+      android:ems="10"
+      android:inputType="number" />
+
+   <Spinner
+       android:id="@+id/spinnerCategory"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/tvGoal"
+       android:layout_below="@+id/tvGoal"
+       android:layout_marginTop="17dp" />
+
+   <Button
+       android:id="@+id/buttonCreateProject"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/spinnerCategory"
+       android:layout_toRightOf="@+id/tvStartDate"
+       android:onClick="login"
+       android:text="@string/create_project" />
+
+</RelativeLayout>

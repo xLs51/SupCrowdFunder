@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:paddingBottom="@dimen/activity_vertical_margin"
+   android:paddingLeft="@dimen/activity_horizontal_margin"
+   android:paddingRight="@dimen/activity_horizontal_margin"
+   android:paddingTop="@dimen/activity_vertical_margin"
+   tools:context=".MainActivity" >
+
+   <TextView
+      android:id="@+id/textView1lol"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="18dp"
+      android:text="@string/sign_up"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+   <TextView
+      android:id="@+id/tvMail"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/textView1lol"
+      android:layout_marginTop="50dp"
+      android:text="@string/mail"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <EditText
+      android:id="@+id/etMail"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/tvMail"
+      android:layout_marginLeft="32dp"
+      android:layout_toRightOf="@+id/tvMail"
+      android:ems="10"
+      android:inputType="textEmailAddress" />
+
+   <TextView
+      android:id="@+id/tvFirstName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/tvMail"
+      android:layout_below="@+id/tvMail"
+      android:layout_marginTop="38dp"
+      android:text="@string/firstname"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <EditText
+      android:id="@+id/etFirstName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/tvFirstName"
+      android:layout_alignLeft="@+id/etMail"
+      android:ems="10" />
+   
+   <TextView
+      android:id="@+id/tvLastName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/tvFirstName"
+      android:layout_below="@+id/tvFirstName"
+      android:layout_marginTop="38dp"
+      android:text="@string/lastname"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <EditText
+      android:id="@+id/etLastName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/tvLastName"
+      android:layout_alignLeft="@+id/etFirstName"
+      android:ems="10" />
+   
+   <TextView
+      android:id="@+id/tvAddress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/tvLastName"
+      android:layout_below="@+id/tvLastName"
+      android:layout_marginTop="38dp"
+      android:text="@string/address"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <EditText
+      android:id="@+id/etAddress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/tvAddress"
+      android:layout_alignLeft="@+id/etLastName"
+      android:ems="10" />
+ 
+   <TextView
+      android:id="@+id/tvPassword"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/tvAddress"
+      android:layout_below="@+id/tvAddress"
+      android:layout_marginTop="38dp"
+      android:text="@string/password"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <EditText
+      android:id="@+id/etPassword"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/tvPassword"
+      android:layout_alignLeft="@+id/etAddress"
+      android:ems="10"
+      android:inputType="textPassword" />
+ 
+   <Button
+      android:id="@+id/buttonSingUp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/etPassword"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:onClick="login"
+      android:text="@string/sign_up" />
+
+</RelativeLayout>
